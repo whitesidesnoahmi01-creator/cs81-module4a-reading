@@ -87,4 +87,4 @@ console.log("Most read book:", mostReadBook(readingLog));
 /* I changed the function name of 'addReadBook'
 to 'addReadEntry', because the naming implies it 
 only adds the book property, when it adds a whole
-entry into the log. */
+entry into the array. */
