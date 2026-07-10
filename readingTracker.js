@@ -1,3 +1,5 @@
+//Github Repo URL: https://github.com/whitesidesnoahmi01-creator/cs81-module4a-reviewtracker
+
 /* This creates an object array called readingLog, 
    which stores different objects containing the same 
    properties, just with different values */
