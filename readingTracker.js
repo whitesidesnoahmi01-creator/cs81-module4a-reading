@@ -48,11 +48,15 @@ function mostReadBook(log) {
   const bookCounts = {};
   for (let entry of log) {
     if (!bookCounts[entry.book]) {
-      bookCounts[entry.book] = 1;
+      bookCounts[entry.book] = [entry.minutes];
     } else {
-      bookCounts[entry.book]++;
+      bookCounts[entry.book] += [entry.minutes];
     }
   }
+
+/* Added improvement to mostReadbook function:
+   I changed the equivalence of bookCounts entries
+   to be [entry.minutes] instead of a counter tally */
 
   let maxBook = null;
   let maxCount = 0;
@@ -78,8 +82,8 @@ function printDailySummary(log) {
   }
 }
 
-// Example usage
-addReadEntry("Saturday", "Dune", 50);
+// Test Case
+addReadEntry("Monday", "The Metamorphosis", 70);
 printDailySummary(readingLog);
 console.log("Total minutes read:", totalReadingMinutes(readingLog));
 console.log("Most read book:", mostReadBook(readingLog));
