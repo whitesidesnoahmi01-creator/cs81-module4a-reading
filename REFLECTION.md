@@ -1,0 +1,5 @@
+1. What was the most helpful aspect of this code’s structure?:
+    The most helpful aspect of this code's structure was the way it was structured. I believe the correct terminology is 'beauty-code.' It made it easy to dissect and learn each part of the functions. It also followed a clear program structure, so it was easy to mentally visualize process flow.
+
+2. What part was confusing or took longer to understand?:
+    Finding an improvement to the logic itself took longer than expected. I didn't actually see a clear improvement until debugging, and adding test data. It was there that I realized, mostReadBook only checks the amount of entries a book has, not the time spent reading. So, if you read a book a few times, only for a minute each, it would return this as your most read book, even though you probably wouldn't consider it your most read book. Instead of a counter tally, I changed each bookCounts entry to equal the log entries book minutes. 
